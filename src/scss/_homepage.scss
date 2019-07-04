@@ -1,0 +1,318 @@
+//top screen
+video {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+        
+}
+
+.blogIntro {
+    position: relative;
+    top: 40vh;
+    width: 80vw;
+    left: (100vw - 80vw)/2;
+    margin-bottom: -30vh;
+    text-align: center;
+    color: white;
+
+    & .blogTitle {
+        font-family: 'Gochi Hand', cursive;
+        font-size: 6em;
+    }
+
+    & .blogBio {
+        font-size: 2em;
+        font-weight: bolder;
+        letter-spacing: 0.2em;
+        margin-top: 3%;
+    }
+
+    // & .fa-long-arrow-down  {
+    //         color: white;
+    //         font-size: 4em;
+    //         display: block;
+        
+    // }
+
+    // & .far 
+
+    // & .fa-arrow-down {
+    //     color: white;
+    //     font-size: 4em;
+    //     // display: block;
+    // }
+}
+
+// homepage grid for photo  section
+
+.homeGridContainer {
+    position: relative;
+    top: 100vh;
+    width: 62%;
+    margin: 5vh auto; 
+}
+
+.homeGrid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 6vw);
+    grid-column-gap: 1vw;
+}
+
+.gridImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    cursor: pointer;
+    transition: transform .5s; 
+
+    &:hover {
+        transform: scale(1.3); 
+    }
+}
+
+.photoSectionItem--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    overflow: hidden;
+}
+
+.photoSectionItem--2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    overflow: hidden;
+}
+
+.photoSectionItem--3 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    overflow: hidden;
+}
+
+.photoSectionItem--4 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    overflow: hidden;
+}
+
+.photoSectionItem--5 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    overflow: hidden;
+}
+
+.photoSectionItem--6 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    overflow: hidden;
+}
+
+//cover photo
+
+.coverPhotoContainer {
+    position: relative;
+    top: 100vh;
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.quoteOverCoverPhoto {
+    // display: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25vw;
+    width: 50vw;
+    font-size: 2em;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 0.1em;  
+
+    
+}
+
+.coverPhoto {
+    width: 100vw;
+    height: 50vw;
+    object-fit: cover;
+    z-index: -1;
+    line-height: 50vh;
+}
+
+
+
+//post section 
+
+// .postSectionContainer {
+//     position: relative;
+//     height: 100vh;
+//     padding-bottom: 50vh;
+// }
+
+.homeGrid2 {
+    display: grid;
+    grid-template-columns: repeat(9, 6vw);
+    grid-template-rows: repeat(7, 6vw);
+    grid-gap: 1vw;
+    position: relative;
+}
+
+.postContent {
+    line-height: 2em;
+    max-height: 12em;
+}
+
+.subHomeGrid2 {
+    display: grid;
+    grid-template-columns: repeat(9, 6vw);
+    grid-template-rows: repeat(1, 2vw);
+    grid-gap: 1vw;
+}
+
+.postContainerDiv1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.postDate--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.postCoverPhoto--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    overflow: hidden;
+}
+
+.postContent--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    overflow: hidden;
+}
+
+.postEndLine--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    cursor: pointer;
+}
+
+.postContainerDiv2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.postDate--2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.postCoverPhoto--2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    overflow: hidden;
+}
+
+.postContent--2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    overflow: hidden;
+}
+
+.postEndLine--2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    cursor: pointer;
+}
+
+.postContainerDiv1 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.postDate--3 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.postCoverPhoto--3 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 4;    
+    overflow: hidden;
+}
+
+.postContent--3 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    overflow: hidden;
+}
+
+.postEndLine--3 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    cursor: pointer;
+}
+
+.postContent {
+    @extend %body-text-item;
+    cursor: pointer;
+}
+
+.postEndLine {
+    border-top: 0.5vw solid #4d4d4d;
+    width: 50%;
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
+
+

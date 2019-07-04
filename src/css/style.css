@@ -1,0 +1,685 @@
+.postsList .postTitleContainer .postTitleContent .postTitle, .galleryButtons .galleryButton, .footer .footerCent .subFooter1, ul li, .seemoreButton {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 3%;
+}
+
+.postsList .postTitleContainer .postTitleContent .postTitleBrief, .postSearch input[type=text], .categoryButton, .postContent, .footer .footerCent .subFooter2 .signUpButton, .footer .footerCent .subFooter2 input[type=text] {
+  color: #4D4D4D;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+  font-weight: 100;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.seemoreButton {
+  position: relative;
+  top: 95vh;
+  width: 15vw;
+  height: 3vw;
+  text-align: center;
+  background-color: #4D4D4D;
+  color: white;
+  left: 42.5vw;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  animation: buttonflash 1.5s;
+}
+
+@keyframes buttonflash {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header-container {
+  height: 8vh;
+  background-color: rgba(215, 215, 215, 0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin-top: 3%;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul li .active {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  background-color: #d7d7d7;
+  top: 100vh;
+}
+.footer img {
+  display: block;
+  width: 8vw;
+  position: relative;
+  left: 12.6666666667vw;
+  top: 3vh;
+}
+.footer .footerCent {
+  text-align: center;
+}
+.footer .footerCent .subFooter1 {
+  position: relative;
+  top: 5vh;
+}
+.footer .footerCent .subFooter2 {
+  position: relative;
+  top: 7.5vh;
+}
+.footer .footerCent .subFooter2 .signUpBox {
+  height: 3vw;
+  padding-right: 3vw;
+  position: relative;
+}
+.footer .footerCent .subFooter2 .signUpButton {
+  height: 3vw;
+  text-align: center;
+  background-color: #4D4D4D;
+  color: white;
+}
+.footer .footerCent .subFooter3 {
+  position: relative;
+  top: 12.5vh;
+}
+.footer .footerCent .subFooter3 .fab {
+  font-size: 3vh;
+}
+.footer .footerCent .subFooter4 {
+  position: relative;
+  top: 17vh;
+}
+
+video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.blogIntro {
+  position: relative;
+  top: 40vh;
+  width: 80vw;
+  left: 10vw;
+  margin-bottom: -30vh;
+  text-align: center;
+  color: white;
+}
+.blogIntro .blogTitle {
+  font-family: "Gochi Hand", cursive;
+  font-size: 6em;
+}
+.blogIntro .blogBio {
+  font-size: 2em;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+  margin-top: 3%;
+}
+
+.homeGridContainer {
+  position: relative;
+  top: 100vh;
+  width: 62%;
+  margin: 5vh auto;
+}
+
+.homeGrid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 6vw);
+  grid-column-gap: 1vw;
+}
+
+.gridImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.gridImg:hover {
+  transform: scale(1.3);
+}
+
+.photoSectionItem--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  overflow: hidden;
+}
+
+.photoSectionItem--2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.photoSectionItem--3 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: hidden;
+}
+
+.photoSectionItem--4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.photoSectionItem--5 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  overflow: hidden;
+}
+
+.photoSectionItem--6 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.coverPhotoContainer {
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: 50vw;
+  overflow: hidden;
+}
+
+.quoteOverCoverPhoto {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 25vw;
+  width: 50vw;
+  font-size: 2em;
+  font-weight: lighter;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+.coverPhoto {
+  width: 100vw;
+  height: 50vw;
+  object-fit: cover;
+  z-index: -1;
+  line-height: 50vh;
+}
+
+.homeGrid2 {
+  display: grid;
+  grid-template-columns: repeat(9, 6vw);
+  grid-template-rows: repeat(7, 6vw);
+  grid-gap: 1vw;
+  position: relative;
+}
+
+.postContent {
+  line-height: 2em;
+  max-height: 12em;
+}
+
+.subHomeGrid2 {
+  display: grid;
+  grid-template-columns: repeat(9, 6vw);
+  grid-template-rows: repeat(1, 2vw);
+  grid-gap: 1vw;
+}
+
+.postContainerDiv1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 8;
+}
+
+.postDate--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.postCoverPhoto--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: hidden;
+}
+
+.postContent--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.postEndLine--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  cursor: pointer;
+}
+
+.postContainerDiv2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 8;
+}
+
+.postDate--2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.postCoverPhoto--2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: hidden;
+}
+
+.postContent--2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.postEndLine--2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  cursor: pointer;
+}
+
+.postContainerDiv1 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 8;
+}
+
+.postDate--3 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.postCoverPhoto--3 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: hidden;
+}
+
+.postContent--3 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.postEndLine--3 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  cursor: pointer;
+}
+
+.postContent {
+  cursor: pointer;
+}
+
+.postEndLine {
+  border-top: 0.5vw solid #4d4d4d;
+  width: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+}
+
+.carousel img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.galleryGridContainer {
+  position: relative;
+  top: 108vh;
+  left: 8.5vw;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 6vw);
+  grid-template-rows: repeat(8, 6vw);
+  grid-column-gap: 1vw;
+}
+
+.galleryItem--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  overflow: hidden;
+}
+
+.galleryItem--2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  overflow: hidden;
+}
+
+.galleryItem--3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  overflow: hidden;
+}
+
+.galleryItem--4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  overflow: hidden;
+}
+
+.galleryItem--5 {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  overflow: hidden;
+}
+
+.galleryItem--6 {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow: hidden;
+}
+
+.galleryItem--7 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.galleryItem--8 {
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  overflow: hidden;
+}
+
+.galleryItem--9 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  overflow: hidden;
+}
+
+.galleryItem--10 {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  overflow: hidden;
+}
+
+.galleryContainer {
+  position: relative;
+  padding-bottom: 20vh;
+}
+
+.galleryButtons .galleryButton {
+  position: relative;
+  top: 108vh;
+  width: 100%;
+  height: 3vw;
+  text-align: center;
+  background-color: #4D4D4D;
+  color: white;
+}
+
+.subGalleryContainer {
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: 50vw;
+  overflow: hidden;
+}
+.subGalleryContainer .subGalleryCover {
+  width: 100vw;
+  height: 50vw;
+  object-fit: cover;
+  z-index: -1;
+}
+.subGalleryContainer .subGalleryItem1 {
+  position: absolute;
+  z-index: 2;
+  top: 10vh;
+  width: 35vw;
+  left: 32.5vw;
+}
+.subGalleryContainer .subGalleryItem1 .subGalleryItemImg1 {
+  width: 100%;
+  opacity: 0.9;
+}
+.subGalleryContainer .subGalleryItem2 {
+  position: absolute;
+  z-index: 1;
+  top: 40vh;
+  width: 35vw;
+  left: 10vw;
+}
+.subGalleryContainer .subGalleryItem2 .subGalleryItemImg2 {
+  width: 100%;
+  opacity: 0.8;
+}
+.subGalleryContainer .subGalleryItem3 {
+  position: absolute;
+  z-index: 1;
+  top: 20vh;
+  width: 35vw;
+  right: 10vw;
+}
+.subGalleryContainer .subGalleryItem3 .subGalleryItemImg3 {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.galleryModal {
+  color: #d7d7d7;
+}
+
+.modalPhoto {
+  position: relative;
+  width: 90%;
+  left: 5%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../scss/mediaIfNeeded/pexels-photo-747964.jpeg");
+  /* Set a specific height */
+  min-height: 80vh;
+  overflow: hidden;
+  position: relative;
+  top: -8vh;
+  z-index: -1;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categoryButton {
+  width: 120%;
+  height: 3vw;
+  text-align: center;
+  background-color: #4D4D4D;
+  color: white;
+}
+
+.postSearch {
+  width: 100%;
+  position: relative;
+  left: 30%;
+}
+.postSearch input {
+  width: 100%;
+  height: 3vw;
+  border-radius: 2em;
+  background-color: #d7d7d7;
+  padding-left: 5%;
+  box-shadow: 3px 4px 6px -2px #d7d7d7;
+  border: none;
+  outline: none;
+}
+.postSearch input::placeholder {
+  color: white;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  font-size: 0.8em;
+}
+.postsContainer {
+  margin-bottom: -80vh;
+}
+
+.postsList {
+  position: relative;
+  width: 70vw;
+  left: 15vw;
+}
+.postsList .postTitleContainer {
+  padding-top: 5%;
+  cursor: pointer;
+}
+.postsList .postTitleContainer .postTitleImgContainer {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 25%;
+}
+.postsList .postTitleContainer .postTitleImgContainer .postTitleImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+.postsList .postTitleContainer .postTitleContent {
+  padding-left: 5vw;
+  position: relative;
+}
+.postsList .postTitleContainer .postTitleContent .postTitle {
+  color: #4d4d4d;
+}
+.postsList .postTitleContainer .postTitleContent .postTitleBrief {
+  position: relative;
+  top: 10%;
+  line-height: 2em;
+  max-height: 4em;
+  overflow: auto;
+}
+.postsList .postTitleContainer .postTitleContent .postTitleEndline {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 0.5vw solid #4d4d4d;
+  width: 20%;
+}
+
+.pageNumberContainer {
+  position: relative;
+  left: 40vw;
+  padding-right: 0.5vw;
+  top: 8vh;
+}
+.pageNumberContainer button {
+  cursor: pointer;
+  width: 2vw;
+  height: 2vw;
+  background-color: #d7d7d7;
+  color: #4d4d4d;
+}
+.pageNumberContainer button:focus {
+  background-color: #4D4D4D;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

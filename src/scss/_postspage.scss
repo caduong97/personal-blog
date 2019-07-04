@@ -1,0 +1,153 @@
+//cover picture
+
+.parallax {
+    /* The image used */
+    background-image: url('../scss/mediaIfNeeded/pexels-photo-747964.jpeg');
+    
+    
+    /* Set a specific height */
+    min-height: 80vh;
+    overflow: hidden;
+    position: relative;
+    top: -8vh;
+    z-index: -1;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//category buttons and search bar
+.categoryButton {
+    width: 120%;
+    height: 3vw;
+    text-align: center;
+    background-color: #4D4D4D;
+    color: white;
+    
+    @extend %body-text-item;
+}
+
+.postSearch {
+    width: 100%;
+    position: relative;
+    left: 30%;
+    & input {
+        width: 100%;
+        height: 3vw;
+        border-radius: 2em;
+        background-color: #d7d7d7;
+        padding-left: 5%;
+        box-shadow: 3px 4px 6px -2px rgba(215,215,215,1);
+        border: none;
+        outline: none;
+    }
+
+    & input::placeholder {
+        color: white;
+        font-family: 'Font Awesome\ 5 Free' !important; 
+        // content: '\f002';
+        font-weight: 900;
+        font-size: 0.8em;
+        
+    }
+    & input[type=text] {
+        @extend %body-text-item;
+    }
+    
+}
+
+// post list
+.postsContainer {
+    // position: relative;
+    margin-bottom: -80vh;
+}
+.postsList {
+    position: relative;
+    width: 70vw;
+    left: (100vw - 70vw) / 2;
+    
+    
+    & .postTitleContainer {
+        padding-top: 5%;
+        cursor: pointer;
+
+        & .postTitleImgContainer {
+            width: 100%;
+            overflow: hidden;
+            padding-top: 25%; //to make aspect ratio 4:1 so that the image is in a square
+            
+    
+            & .postTitleImg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block; 
+                cursor: pointer;
+                
+            }
+        }
+    
+        & .postTitleContent {
+            padding-left: 5vw;
+            position: relative;
+    
+            & .postTitle {
+                color: #4d4d4d;
+                @extend %heading-item;
+            }
+    
+            & .postTitleBrief {
+                position: relative;
+                top: 10%;
+                line-height: 2em;
+                max-height: 4em;
+                overflow: auto;
+    
+                @extend %body-text-item;
+            }
+    
+            & .postTitleEndline {
+                position: absolute;
+                bottom: 0;
+                border-bottom: 0.5vw solid #4d4d4d;
+                width: 20%;
+                
+                
+            }
+        }
+
+    }   
+
+    
+    
+}
+
+//pagination
+.pageNumberContainer {
+    position: relative;
+    left: 40vw;
+    padding-right: 0.5vw;
+    top: 8vh;
+
+    & button {
+        cursor: pointer;
+        width: 2vw;
+        height: 2vw;
+        background-color: #d7d7d7;
+        color: #4d4d4d;
+
+        &:focus {
+            background-color: #4D4D4D;
+            color: white;
+        }
+    }
+}
+
+
+
